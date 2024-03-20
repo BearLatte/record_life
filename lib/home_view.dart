@@ -52,6 +52,7 @@ class HomeView extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () => profileButtonAction(context),
                 style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(HexColor('#3FA565')),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
@@ -143,11 +144,12 @@ class HomeView extends StatelessWidget {
 
   Widget _itemButton({required String title, Function()? onPressed}) {
     return Container(
-      width: 175,
+      width: 190,
       height: 50,
       margin: const EdgeInsets.only(bottom: 30),
       child: ElevatedButton(
         onPressed: onPressed,
+        style: ButtonStyle(backgroundColor: MaterialStateProperty.all(HexColor("#3FA565"))),
         child: Text(
           title,
           style: const TextStyle(

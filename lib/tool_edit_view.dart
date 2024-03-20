@@ -76,6 +76,7 @@ class _ToolEditViewState extends State<ToolEditView> {
           child: ElevatedButton(
             onPressed: addMemoAction,
             style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(HexColor("#3FA565")),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
